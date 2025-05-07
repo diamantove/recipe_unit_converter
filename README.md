@@ -139,7 +139,7 @@ RecipeUnitConverter.supported_units
 
 `{ tsp: :teaspoon, tbsp: :tablespoon, g: :gram, ml: :milliliter, ... }`
 
-**Возвращает**: `Hash` — Отображение всех синонимов и псевдонимов единиц, например:
+**Возвращает**: `Hash` — Отображение всех синонимов и псевдонимов единиц
 
 ### `RecipeUnitConverter.density_for(ingredient)`
 
@@ -150,7 +150,7 @@ RecipeUnitConverter.density_for(:honey)
 # => 1.42
 ```
 
-**Возвращает**: `Float` — текущая плотность ингредиента, если она задана.
+**Возвращает**: `Float` — текущая плотность ингредиента, если она задана
 
 ### Класс `RecipeUnitConverter::Converter`
 
