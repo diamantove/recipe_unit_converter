@@ -125,6 +125,33 @@ honey_grams = RecipeUnitConverter.convert(1, :cup, :grams, ingredient: :honey)
 
 **Возвращает**: `Float` — результат конвертации
 
+### `RecipeUnitConverter.supported_units`
+
+**Пример:**
+
+```ruby
+RecipeUnitConverter.supported_units
+# => [:teaspoon, :tablespoon, :cup, :gram, ...]
+```
+**Возвращает**: `Array` — список всех поддерживаемых единиц измерения
+
+### `RecipeUnitConverter.unit_aliases`
+
+`{ tsp: :teaspoon, tbsp: :tablespoon, g: :gram, ml: :milliliter, ... }`
+
+**Возвращает**: `Hash` — Отображение всех синонимов и псевдонимов единиц, например:
+
+### `RecipeUnitConverter.density_for(ingredient)`
+
+**Пример:**
+
+```ruby
+RecipeUnitConverter.density_for(:honey)
+# => 1.42
+```
+
+**Возвращает**: `Float` — текущая плотность ингредиента, если она задана.
+
 ### Класс `RecipeUnitConverter::Converter`
 
 Цепочный интерфейс:
