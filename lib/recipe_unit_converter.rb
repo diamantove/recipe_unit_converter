@@ -95,7 +95,7 @@ module RecipeUnitConverter
     dl:              :deciliter,
     deciliters:      :deciliter,
     l:               :liter,
-    liters:          :liter
+    liters:          :liter,
     # масса
     mg:              :milligram,
     milligrams:      :milligram,
